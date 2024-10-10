@@ -27,6 +27,14 @@ module.exports = (sequelize, Sequelize) => {
       type: Sequelize.STRING,
       allowNull: false // Making phone required
   },
+  city: { // New field for candidate's city
+    type: Sequelize.STRING,
+    allowNull: true // Optional field
+},
+profileSummary: { // New field for candidate's profile summary
+    type: Sequelize.TEXT, // Using TEXT for longer input
+    allowNull: true // Optional field
+},
 
     externalEmail: {
       type: Sequelize.STRING,
